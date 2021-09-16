@@ -1,0 +1,49 @@
+.nano {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.nano .nano-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 15px 5%;
+}
+.nano .nano-content:focus { outline: thin dotted }
+.nano .nano-content::-webkit-scrollbar { display: none }
+
+.nano > .nano-pane {
+  border-left: #dbdbdb 1px solid;
+  width: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  visibility: hidden;
+  opacity: .01;
+}
+
+.nano > .nano-pane > .nano-slider {
+  background: #c4c4c4;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 0 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.has-scrollbar > .nano-content::-webkit-scrollbar { display: block }
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+  visibility: visible;
+  opacity: 0.99;
+}

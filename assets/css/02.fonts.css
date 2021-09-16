@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Awesome Font';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Awesome Font Italic'),
+    url('/fonts/awesome-i.woff2') format('woff2'),
+    url('/fonts/awesome-i.woff') format('woff'),
+    url('/fonts/awesome-i.ttf') format('ttf'),
+    url('/fonts/awesome-i.eot') format('eot');
+}
